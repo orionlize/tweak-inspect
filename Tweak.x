@@ -8,7 +8,7 @@
 -(void)viewDidAppear:(BOOL)arg0  {
     %orig;
     UIAlertController *alertController = ({
-        UIAlertController *_alertController = [UIAlertController alertControllerWithTitle:@"Hello World!" message:nil preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertController *_alertController = [UIAlertController alertControllerWithTitle:@"Hello Zq!" message:nil preferredStyle:UIAlertControllerStyleAlert];
         [_alertController addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {}]];
         [_alertController addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {}]];
         _alertController;

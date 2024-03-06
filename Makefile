@@ -1,4 +1,4 @@
-THEOS_DEVICE_IP = 10.50.194.43
+THEOS_DEVICE_IP = 10.50.194.46
 THEOS_DEVICE_PORT = 22
 THEOS_DEVICE_USER = mobile
 
@@ -13,3 +13,9 @@ inspect_FILES = Tweak.x
 inspect_FRAMEWORKS = UIKit
 
 include $(THEOS_MAKE_PATH)/tweak.mk
+
+before-stage::
+	make clean-packages
+
+after-package::
+	./install.sh
